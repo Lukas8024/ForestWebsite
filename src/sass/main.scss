@@ -26,19 +26,21 @@ body {
 }
 
 .section-title {
-	padding: 1.5em 0;
+	padding-bottom: 3em;
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: 400;
 }
 
+.section-scroll{
+	padding-top: 4.3em;
+	}
+
 // NAV
 .nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	position: fixed;
 	width: 100%;
-	// height: 20%;
+	background-color: $bg-color;
 	overflow: hidden;
 	z-index: 100;
 }
@@ -49,7 +51,7 @@ body {
 	text-decoration: none;
 	color: black;
 	transition: transform 0.3s;
-	&:hover{
+	&:hover {
 		transform: scale(1.2);
 	}
 }
@@ -66,22 +68,18 @@ body {
 		transform: scale(1.4);
 	}
 }
-// .nav-button {
-// 	&__close {
-// 		display: none;
-// 		&--active {
-// 			display: block;
-// 		}
-// 	}
-// }
 
 .nav-mobile {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	&__items {
-		position: absolute;
+		position: fixed;
 		top: 10vh;
 		left: 0;
 		right: 0;
 		bottom: 10vh;
+		margin: 0 2em;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -89,7 +87,7 @@ body {
 		border-radius: 10px;
 		z-index: 50;
 		background-color: $footer-bg;
-		transform: translateX(-102%);
+		transform: translateX(-120%);
 		transition: transform 0.5s;
 		&--active {
 			transform: translateX(0);
@@ -120,6 +118,7 @@ body {
 		text-decoration: none;
 		color: black;
 		transition: color 0.3s, background-color 0.3s;
+		&--active,
 		&:hover {
 			color: #fff;
 			background-color: black;
@@ -164,12 +163,6 @@ body {
 }
 
 // ABOUTUS
-// .aboutus h2 {
-// 	padding: 1.5em 0;
-// 	text-align: center;
-// 	text-transform: uppercase;
-// 	font-weight: 400;
-// }
 .aboutus-info {
 	display: flex;
 	flex-direction: column;
@@ -220,7 +213,7 @@ body {
 		font-size: 3.7rem;
 		font-weight: bold;
 	}
-	&__options{
+	&__options {
 		line-height: 3rem;
 		list-style: none;
 	}
@@ -243,7 +236,7 @@ body {
 		&:hover {
 			background-color: lightgray;
 		}
-		&--central{
+		&--central {
 			&:hover {
 				background-color: limegreen;
 			}
@@ -255,12 +248,12 @@ body {
 .footer {
 	position: relative;
 	bottom: 0;
-	padding: 5em 0;
+	padding: 8em 0;
 	// font-size: 2.4rem;
 	background-color: $footer-bg;
 }
 
-.footer-end{
+.footer-end {
 	position: absolute;
 	// width: 100vh;
 	bottom: 0;
@@ -268,6 +261,7 @@ body {
 	transform: translate(-50%, -50%);
 	// bottom: 0;
 	margin: 1em;
+	font-size: 1.5rem;
 	// border-top: 1px solid black;
 }
 
@@ -277,6 +271,8 @@ body {
 	}
 	.nav-desktop {
 		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 	.hero-img {
 		&__header {
