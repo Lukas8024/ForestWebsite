@@ -12,12 +12,12 @@ const handleNav = () => {
 	navMobile.classList.toggle('nav-mobile__items--active')
 
 	body.style.overflow = 'hidden'
-	
+
 	allNavItems.forEach(item => {
 		item.addEventListener('click', () => {
 			navMobile.classList.remove('nav-mobile__items--active')
-			changeIcon()
 			body.style.overflow = 'auto'
+			changeIcon()
 		})
 	})
 	changeIcon()
@@ -30,6 +30,7 @@ const changeIcon = () => {
 	} else {
 		iconBtn.classList.remove('fa-solid', 'fa-xmark')
 		iconBtn.classList.add('fa-solid', 'fa-bars')
+		body.style.overflow = 'auto'
 	}
 }
 
