@@ -42,13 +42,14 @@
     </div>
 </nav>
 
-    <section id="offers" class="offers wrapper section-scroll">
-        <h2 class="section-title">Dodatkowe oferty</h2>
-        <p>Wybierz jedną z naszych rozszerzonych ofert!</p>
+    <section id="more-offers" class="more-offers wrapper section-scroll">
+        <div class="more-offers__section">
+            <h2 class="section-title">Dodatkowe oferty</h2>
+            <p>Wybierz jedną z naszych rozszerzonych ofert!</p>
         <div class="offers-cards">
             <div class="offer-card">
                 <h3>Extra</h3>
-                <p>$599</p>
+                <p class="price">$599</p>
                 <ul class="offer-card__options">
                     <li><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
                     <li><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
@@ -60,7 +61,7 @@
             </div>
             <div class="offer-card">
                 <h3>Extra +</h3>
-                <p>$699</p>
+                <p class="price">$699</p>
                 <ul class="offer-card__options">
                     <li><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
                     <li><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
@@ -72,7 +73,7 @@
             </div>
             <div class="offer-card">
                 <h3>Bussines</h3>
-                <p>$1299</p>
+                <p class="price">$1299</p>
                 <ul class="offer-card__options">
                     <li><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
                     <li><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
@@ -80,11 +81,11 @@
                     <li><i class="fa-solid fa-minus"></i> opcja poza pakietem</li>
                     <li><i class="fa-solid fa-minus"></i> opcja poza pakietem</li>
                 </ul>
-                <button class="offer-card__btn offer-card__btn--central">Wybierz</button>
+                <button class="offer-card__btn">Wybierz</button>
             </div>
             <div class="offer-card">
                 <h3>Bussines +</h3>
-                <p>$1599</p>
+                <p class="price">$1599</p>
                 <ul class="offer-card__options">
                     <li><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
                     <li><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
@@ -95,25 +96,27 @@
                 <button class="offer-card__btn">Wybierz</button>
             </div>
         </div>
+    </div>
     </section>
 
     <footer class="footer">
-    <div class="wrapper container">
+    <div class="wrapper">
 
         <div class="section-list">
-            <a class="nav-logo" href="index.html#home">
-                <p><i class="fa-solid fa-tree"></i> Forest</p>
-            </a>
+            <div class="section-list__one">
+                <a class="nav-logo" href="index.html#home">
+                    <p><i class="fa-solid fa-tree"></i> Forest</p>
+                </a>
+            </div>
+            <div class="section-list__two">
+                <ul class="list">
+                    <h3>O nas</h3>
+                    <li>Historia</li>
+                    <li>Parki</li>
+                    <li>Opinie</li>
+                </ul>
         </div>
-        <div class="section-list">
-            <ul class="list">
-                <h3>O nas</h3>
-                <li>Historia</li>
-                <li>Parki</li>
-                <li>Opinie</li>
-            </ul>
-        </div>
-        <div class="section-list">
+        <div class="section-list__three">
             <ul class="list">
                 <h3>Nasza Firma</h3>
                 <li>Praca</li>
@@ -121,7 +124,7 @@
                 <li>Zarząd</li>
             </ul>
         </div>
-        <div class="section-list">
+        <div class="section-list__four">
             <ul class="list">
                 <h3>Dokumenty</h3>
                 <li>Wnioski</li>
@@ -129,13 +132,14 @@
             </ul>
         </div>
     </div>
-
-        <div class="footer-end">
-            <P class="footer__bottom-text"> &copy; <span class="footer__year"></span> Forest Group Company Ltd.</P>
-        </div>
-
+</div>
+    
+    <div class="footer-end">
+        <P class="footer__bottom-text"> &copy; <span class="footer__year"></span> Forest Group Company Ltd.</P>
+    </div>
+    
 </footer>
-
+    
     <script src="../dist/js/script.min.js"></script>
 </body>
 

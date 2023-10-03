@@ -42,31 +42,53 @@
     </div>
 </nav>
 
-<section class="contact">
-    <h1>Napisz do nas</h1>
-    <div>
-        <label for="">Imię:</label>
-        <input type="text">
+<section id="contact" class="section-scroll wrapper">
+    <h2 class="section-title">Napisz do nas</h2>
+    <form class="contact">
+        <div class="form-box">
+            <label for="username">Imię:</label>
+            <input type="text" id="username" placeholder="Podaj imię">
+            <p class="error-text">error</p>
+        </div>
+        <div class="form-box">
+            <label for="email">Adres e-mail:</label>
+            <input type="email" id="email" placeholder="Podaj adres mailowy">
+            <p class="error-text">error</p>
+        </div>
+        <div class="form-box">
+            <label for="text">Wpisz treść wiadomości:</label>
+            <textarea id="text" rows="6"></textarea>
+            <p class="error">Uzupełnij wszystkie pola!</p>
+        </div>
+        <div class="panel-buttons">
+            <button class="send icon"><i class="fa-solid fa-envelope"></i></i> Wyślij</button>
+            <button class="cancel icon"><i class="far fa-window-close"></i> Wyczyść</button>
+        </div>
+    </form>
+    <div class="google-map contact">
+        <h3>Znajdziesz nas tutaj:</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5119.796475698581!2d19.885398367579093!3d50.088192098105374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a326d015c3b%3A0x47a12cd367a1f34e!2sRestauracja%20McDonald&#39;s!5e0!3m2!1spl!2spl!4v1696333493276!5m2!1spl!2spl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-</section>
-
+    </section>
+    
     <footer class="footer">
-    <div class="wrapper container">
+    <div class="wrapper">
 
         <div class="section-list">
-            <a class="nav-logo" href="index.html#home">
-                <p><i class="fa-solid fa-tree"></i> Forest</p>
-            </a>
+            <div class="section-list__one">
+                <a class="nav-logo" href="index.html#home">
+                    <p><i class="fa-solid fa-tree"></i> Forest</p>
+                </a>
+            </div>
+            <div class="section-list__two">
+                <ul class="list">
+                    <h3>O nas</h3>
+                    <li>Historia</li>
+                    <li>Parki</li>
+                    <li>Opinie</li>
+                </ul>
         </div>
-        <div class="section-list">
-            <ul class="list">
-                <h3>O nas</h3>
-                <li>Historia</li>
-                <li>Parki</li>
-                <li>Opinie</li>
-            </ul>
-        </div>
-        <div class="section-list">
+        <div class="section-list__three">
             <ul class="list">
                 <h3>Nasza Firma</h3>
                 <li>Praca</li>
@@ -74,7 +96,7 @@
                 <li>Zarząd</li>
             </ul>
         </div>
-        <div class="section-list">
+        <div class="section-list__four">
             <ul class="list">
                 <h3>Dokumenty</h3>
                 <li>Wnioski</li>
@@ -82,11 +104,12 @@
             </ul>
         </div>
     </div>
-
-        <div class="footer-end">
-            <P class="footer__bottom-text"> &copy; <span class="footer__year"></span> Forest Group Company Ltd.</P>
-        </div>
-
+</div>
+    
+    <div class="footer-end">
+        <P class="footer__bottom-text"> &copy; <span class="footer__year"></span> Forest Group Company Ltd.</P>
+    </div>
+    
 </footer>
 
     <script src="../dist/js/script.min.js"></script>

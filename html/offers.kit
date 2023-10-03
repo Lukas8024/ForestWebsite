@@ -15,13 +15,14 @@
 <body>
     <!-- @include 'nav.kit' -->
 
-    <section id="offers" class="offers wrapper section-scroll">
-        <h2 class="section-title">Dodatkowe oferty</h2>
-        <p>Wybierz jedną z naszych rozszerzonych ofert!</p>
+    <section id="more-offers" class="more-offers wrapper section-scroll">
+        <div class="more-offers__section">
+            <h2 class="section-title">Dodatkowe oferty</h2>
+            <p>Wybierz jedną z naszych rozszerzonych ofert!</p>
         <div class="offers-cards">
             <div class="offer-card">
                 <h3>Extra</h3>
-                <p>$599</p>
+                <p class="price">$599</p>
                 <ul class="offer-card__options">
                     <li><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
                     <li><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
@@ -33,7 +34,7 @@
             </div>
             <div class="offer-card">
                 <h3>Extra +</h3>
-                <p>$699</p>
+                <p class="price">$699</p>
                 <ul class="offer-card__options">
                     <li><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
                     <li><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
@@ -45,7 +46,7 @@
             </div>
             <div class="offer-card">
                 <h3>Bussines</h3>
-                <p>$1299</p>
+                <p class="price">$1299</p>
                 <ul class="offer-card__options">
                     <li><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
                     <li><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
@@ -53,11 +54,11 @@
                     <li><i class="fa-solid fa-minus"></i> opcja poza pakietem</li>
                     <li><i class="fa-solid fa-minus"></i> opcja poza pakietem</li>
                 </ul>
-                <button class="offer-card__btn offer-card__btn--central">Wybierz</button>
+                <button class="offer-card__btn">Wybierz</button>
             </div>
             <div class="offer-card">
                 <h3>Bussines +</h3>
-                <p>$1599</p>
+                <p class="price">$1599</p>
                 <ul class="offer-card__options">
                     <li><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
                     <li><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
@@ -68,10 +69,11 @@
                 <button class="offer-card__btn">Wybierz</button>
             </div>
         </div>
+    </div>
     </section>
 
     <!-- @include 'footer.kit' -->
-
+    
     <script src="../dist/js/script.min.js"></script>
 </body>
 

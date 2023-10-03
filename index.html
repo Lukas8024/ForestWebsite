@@ -58,8 +58,7 @@
             <h2 class="section-title">O Nas</h2>
             <div class="aboutus-info">
                 <img class="aboutus-info__img" src="../src/img/waters_small.jpg" alt="wyspa z drzewkiem na jeziorze">
-                <!-- <div class="aboutus-info__img">
-                </div> -->
+            
                 <div class="aboutus-info__text">
                     <h3>Niezapomniane przygody</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo voluptatibus incidunt,
@@ -86,7 +85,7 @@
             <div class="offers-cards">
                 <div class="offer-card">
                     <h3>Demo</h3>
-                    <p>$0</p>
+                    <p class="price">$0</p>
                     <ul class="offer-card__options">
                         <li><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
                         <li><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
@@ -98,7 +97,7 @@
                 </div>
                 <div class="offer-card">
                     <h3>Standard</h3>
-                    <p>$99</p>
+                    <p class="price">$99</p>
                     <ul class="offer-card__options">
                         <li><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
                         <li><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
@@ -110,7 +109,7 @@
                 </div>
                 <div class="offer-card">
                     <h3>Premium</h3>
-                    <p>$299</p>
+                    <p class="price">$299</p>
                     <ul class="offer-card__options">
                         <li><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
                         <li><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
@@ -121,27 +120,28 @@
                     <button class="offer-card__btn">Wybierz</button>
                 </div>
             </div>
-            <a href="../offers.html"><p>...więcej ofert!</p></a>
+            <a href="../offers.html"><p>Sprawdź  ...więcej ofert!</p></a>
         </section>
     </main>
 
     <footer class="footer">
-    <div class="wrapper container">
+    <div class="wrapper">
 
         <div class="section-list">
-            <a class="nav-logo" href="index.html#home">
-                <p><i class="fa-solid fa-tree"></i> Forest</p>
-            </a>
+            <div class="section-list__one">
+                <a class="nav-logo" href="index.html#home">
+                    <p><i class="fa-solid fa-tree"></i> Forest</p>
+                </a>
+            </div>
+            <div class="section-list__two">
+                <ul class="list">
+                    <h3>O nas</h3>
+                    <li>Historia</li>
+                    <li>Parki</li>
+                    <li>Opinie</li>
+                </ul>
         </div>
-        <div class="section-list">
-            <ul class="list">
-                <h3>O nas</h3>
-                <li>Historia</li>
-                <li>Parki</li>
-                <li>Opinie</li>
-            </ul>
-        </div>
-        <div class="section-list">
+        <div class="section-list__three">
             <ul class="list">
                 <h3>Nasza Firma</h3>
                 <li>Praca</li>
@@ -149,7 +149,7 @@
                 <li>Zarząd</li>
             </ul>
         </div>
-        <div class="section-list">
+        <div class="section-list__four">
             <ul class="list">
                 <h3>Dokumenty</h3>
                 <li>Wnioski</li>
@@ -157,11 +157,12 @@
             </ul>
         </div>
     </div>
-
-        <div class="footer-end">
-            <P class="footer__bottom-text"> &copy; <span class="footer__year"></span> Forest Group Company Ltd.</P>
-        </div>
-
+</div>
+    
+    <div class="footer-end">
+        <P class="footer__bottom-text"> &copy; <span class="footer__year"></span> Forest Group Company Ltd.</P>
+    </div>
+    
 </footer>
 
     <script src="../dist/js/script.min.js"></script>
