@@ -154,7 +154,7 @@ body {
 		color: $primary-color;
 		z-index: 100;
 		font-size: 1.4rem;
-		p{
+		p {
 			font-size: 1.6rem;
 		}
 		&--title {
@@ -172,7 +172,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	// margin-bottom: 1.5em;
+	margin-bottom: 1.5em;
 	&__img {
 		// width: 100%;
 		padding: 0 1.5em;
@@ -257,6 +257,7 @@ body {
 			background-color: $check-btn;
 		}
 		&--central {
+			background-color: lime;
 			&:hover {
 				background-color: $primary-check-btn;
 			}
@@ -265,10 +266,9 @@ body {
 }
 
 // MORE OFFERS
-.more-offers{
+.more-offers {
 	text-align: center;
 	padding: 0 0.5em;
-	
 }
 
 //CONTACT
@@ -276,6 +276,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	margin: 0em 1em;
+	padding: 1em;
 	margin-bottom: 4em;
 	border: 1px;
 	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
@@ -306,14 +307,21 @@ body {
 		resize: vertical;
 		border: 1px solid rgb(197, 197, 197);
 	}
-	.error,
+
 	.error-text {
 		margin-top: 0.5em;
-		color: red;
+		color: $error-text;
+		visibility: hidden;
 	}
 }
+
+.form-box.error .error-text {
+	visibility: visible;
+}
+
 .panel-buttons {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-around;
 	margin: 2em 0;
 	button {
@@ -332,7 +340,21 @@ body {
 	}
 }
 
-.google-map{
+.popup {
+	position: absolute;
+	top: -50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 2em 2em;
+	z-index: 50;
+	background-color: $primary-color;
+}
+
+.show-popup{
+	top: 50%;
+}
+
+.google-map {
 	display: flex;
 	justify-content: center;
 	padding: 1em;
@@ -379,13 +401,17 @@ body {
 // MEDIA
 
 @media (min-width: 576px) {
+	.panel-buttons {
+		flex-direction: row;
+	}
+
 	.footer-end {
 		font-size: 1.8rem;
 	}
 }
 
 @media (min-width: 768px) {
-	.hero-img__title p{
+	.hero-img__title p {
 		font-size: 2rem;
 	}
 	.offers-cards {

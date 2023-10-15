@@ -45,7 +45,7 @@ window.onscroll = () => {
 		let offset = sec.offsetTop - 100
 		let height = sec.offsetHeight
 		let id = sec.getAttribute('id')
-
+		
 		if (top >= offset && top < offset + height) {
 			navLinks.forEach(links => {
 				links.classList.remove('nav-desktop__item--active')
@@ -56,5 +56,5 @@ window.onscroll = () => {
 }
 
 burgerBtn.addEventListener('click', handleNav)
-
 handleCurrentYear()
+
