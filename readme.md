@@ -1,4 +1,4 @@
 # Forest Website
-This is my first project written independently, based on a design from figma. This project is an assignment at the end of part 4 of the MMC Scholl web development course.
+This project is an assignment at the end of part 4 of the MMC Scholl web development course. This is my first self-written project, based on the course author's mockup.
 
 [MMC School](https://mmcschool.pl/)
