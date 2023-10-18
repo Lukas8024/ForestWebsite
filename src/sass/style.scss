@@ -198,9 +198,8 @@ img{
 	padding-bottom: 4em;
 	a {
 		font-size: 2rem;
-		transition: font-weight 0.3s, color 0.3s;
+		transition: color 0.3s;
 		&:hover {
-			font-weight: bold;
 			color: $primary-check-btn;
 		}
 	}
