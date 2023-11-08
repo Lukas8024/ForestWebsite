@@ -5,9 +5,6 @@ const allNavItems = document.querySelectorAll('.nav-mobile__item')
 const footerYear = document.querySelector('.footer__year')
 const body = document.querySelector('body')
 
-let section = document.querySelectorAll('.section-scroll')
-let navLinks = document.querySelectorAll('.nav-desktop__item')
-
 const handleNav = () => {
 	navMobile.classList.toggle('nav-mobile__items--active')
 

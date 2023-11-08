@@ -1,3 +1,6 @@
+let section = document.querySelectorAll('.section-scroll')
+let navLinks = document.querySelectorAll('.nav-desktop__item')
+
 window.onscroll = () => {
 	section.forEach(sec => {
 		let top = window.scrollY
